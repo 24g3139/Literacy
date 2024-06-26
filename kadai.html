@@ -1,1 +1,131 @@
+<!DOCTYPE html>
 
+<html lang="ja">
+
+<head>
+
+<meta charset=UTF-8">
+
+<title>じゃんけんポン</title>
+
+</head>
+
+<body>
+
+<h1>第11週 Webサイト構築（2）</h1>
+
+<h3>課題１（１）</h3>
+
+<?php
+
+//勝った回数の管理
+
+if(isset(【①　　　】['win'])){
+
+   $win = 【①】['win'];
+
+   } else {
+
+   $win = 0;
+
+   }
+
+//負けた回数の管理
+
+if(isset(【①】['lose'])){
+
+   $lose = 【①】['lose'];
+
+   } else {
+
+   $lose = 0;
+
+   }
+
+//あいこの回数の管理
+
+if(isset(【①】['aiko'])){
+
+   $aiko = 【①】['aiko'];
+
+   } else {
+
+   $aiko = 0;
+
+   }
+
+?>
+
+
+
+<form action="【②　　　】.php" method="【③　　　】">
+
+<p style="【④　　　】;">じゃんけん</p>
+
+<p>
+
+<input type="【⑤　　　】" name="janken" value="0">グー　
+
+<input type="【⑤】" name="janken" value="1">チョキ　
+
+<input type="【⑤】" name="janken" value="2">パー
+
+</p>
+
+<input type="【⑥　　　】" value="ぽん">
+
+<input type="【⑦　　　】" value=<?php echo $win; ?>  name="win">
+
+<input type="【⑦】" value=<?php echo $lose; ?> name="lose">
+
+<input type="【⑦】" value=<?php echo $aiko; ?> name="aiko">
+
+</form>
+
+<br>
+
+<hr>
+
+<hr>
+
+<h3>課題１（２）</h3>
+
+<form action="【⑧　　　】" method="【⑨　　　】">
+
+<p style="【④】;">inputタグの様々な機能</p>
+
+<p>複数選択可 ⇒ 
+
+<input type="【⑩　　　】" name="Jump" value="Jump">Jump
+
+<input type="【⑩】" name="Go" value="Go">Go
+
+<input type="【⑩】" name="Warp" value="Warp">Warp
+
+</p>
+
+<p>色指定 ⇒ 
+
+<input type="【⑪　　　】" name="color" value="#ff0000">
+
+</p>
+
+<p>日付指定 ⇒ 
+
+<input type="【⑫　　　】" name="date">
+
+</p>
+
+<p>パスワード指定 ⇒ 
+
+<input type="【⑬　　　】" name="password">
+
+</p>
+
+<input type="【⑭　　　】" value="【⑮　　　】">
+
+</form>
+
+</body>
+
+</html>
